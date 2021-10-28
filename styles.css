@@ -1,0 +1,105 @@
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: #eee;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex: auto;
+}
+
+article {
+	flex: 2;
+	overflow-y: auto;
+}
+
+aside {
+	flex: 1;
+	overflow-y: auto;
+}
+
+h1, h2, h3, h4 {
+	background-color: black;
+	color: white;
+}
+
+.bordered {
+	border: solid 1px #777;
+}
+
+.sizesmall {
+	width: 15ex;
+	height: 15ex;
+	padding: 5px;
+}
+
+article > div {
+	display: block;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+}
+
+article > div > ul {
+	display: inline;
+	padding: 0;
+}
+
+.sidebyside {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 10px 10px 10px;
+}
+
+.columns-all {
+	display: flex;
+}
+
+.education {
+	padding: 10px;
+	margin: 10px;
+	background-color: #fff;
+	border: solid 1px #ccc;
+}
+
+.full-width {
+	width: 100%;
+	text-align: center;
+}
+
+.education .institution-name {
+	font-weight: bold;
+}
+
+.education .columns {
+	width: 100%;
+}
+
+.education .range {
+	text-align: right;
+}
+
+.education .columns div {
+	width: 50%;
+}
+
+.columns {
+	display: flex;
+}
+
+.centered {
+	margin: 10px;
+	color: blue;
+	text-align: center;
+}
+
+.selected {
+	text-weight: bold;
+	background-color: yellow;
+}
+
+article #profile-pic {
+	text-align: center;
+}
